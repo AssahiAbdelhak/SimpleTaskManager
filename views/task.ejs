@@ -1,0 +1,10 @@
+
+    <div class="task-container mb-2">
+        <h2 class=<%= myTask.completed ? "done" : "" %>>
+            <%= myTask.task %>
+        </h2>
+        <div class="action">
+            <a href="/task/<%= myTask.id %>"><i class="fa-solid fa-pen-to-square" ></i></a>
+            <a href="/delete/<%= myTask.id %>"><i class="fa-solid fa-trash" ></i></a>
+        </div>
+    </div>
